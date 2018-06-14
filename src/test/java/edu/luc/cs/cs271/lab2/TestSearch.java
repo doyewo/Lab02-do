@@ -1,11 +1,14 @@
 package edu.luc.cs.cs271.lab2;
 
 import org.junit.Test;
+
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class TestSearch {
   
-  Team[] makeArrayFixture(final int size) {
+  private Team[] makeArrayFixture(final int size) {
     final Team[] array = new Team[size];
     for (int i = 0; i < size; i++) {
       final String s = Integer.toString(i);
@@ -15,6 +18,10 @@ public class TestSearch {
   }
 
   // TODO makeListFixture
+  private List<Team> makeArrayListFixture(final int size) {
+    final List<Team> list = new Team(size);
+
+  }
 
   @Test
   public void testFindPositionArray0() {
@@ -35,6 +42,11 @@ public class TestSearch {
   }
   
   // TODO: testFindPositionList0, 10s, 10f
+  @Test
+  public void testFindPostionList0() {
+    final List <Team> list = makeL;
+    assertFalse(Search.findTeamPosition(list, "Team 5",) .isPresent());
+  }
   
   // TODO: testFindMinFundingArray for several sizes and scenarios
 

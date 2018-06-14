@@ -30,9 +30,13 @@ An understanding of the following concepts and techniques:
 # Questions
 
 - What is the complexity of each of the four search methods in terms of array or list size n?
-- What happens in the case of binary search if the array is not sorted?
+- What happens in the case of binary search if the array is not sorted? Binary search is usually organized in an
+increasing order. When an array is unsorted the search would most likely miss the element you are searching for
 - What is the purpose of constructor argument validity checking?
+Checks to make sure all elements of the constructor are valid inputs.
 - What is the purpose of using the keyword `final` with variables and arguments?
+You can use 'final' when you want the compiler to prevent an argument or variable from being reassigned to a
+different object
 - What are alternatives to using `Optional` and how do they compare?
 
 # Deliverables and submission
